@@ -19,7 +19,7 @@ v_diff = upper_bound - lower_bound
 v_buffer = []
 h_buffer = []
 
-for i in range(10):
+for i in range(20):
     _, frame = webcam.read()
     height = frame.shape[0]
     width = frame.shape[1]
@@ -61,7 +61,7 @@ while True:
     top_left_corner = (int(box_center[0]) - 40, int(box_center[1]) - 40)
     lower_right_corner = (int(box_center[0]) + 40, int(box_center[1]) + 40)
 
-    cv2.rectangle(frame, top_left_corner, lower_right_corner, (0, 255, 0), 2)
+    cv2.rectangle(frame, top_left_corner, lower_right_corner, (255, 0, 0), 2)
 
     v_buffer.pop(0)
     h_buffer.pop(0)
