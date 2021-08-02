@@ -19,7 +19,7 @@ v_diff = upper_bound - lower_bound
 v_buffer = []
 h_buffer = []
 
-for i in range(20):
+for i in range(25):
     _, frame = webcam.read()
     height = frame.shape[0]
     width = frame.shape[1]
