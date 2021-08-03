@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import os
 app = Flask(__name__)
 
 @app.route('/')
@@ -7,9 +8,7 @@ def index():
 
 @app.route('/my-link/')
 def my_link():
-  print ('I got clicked!')
-
-  return 'Click.'
+  os.system("python3 main.py")
 
 if __name__ == '__main__':
   app.run(debug=True)
