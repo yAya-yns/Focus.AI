@@ -20,3 +20,12 @@ html{
     align-self:center;
     justify-self: center;
 }
+
+.timer{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
