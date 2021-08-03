@@ -39,3 +39,18 @@ html{
 #cycles {
     grid-area: 1 / 4 / 1 / 4;
 }
+
+#counter {
+    grid-area: 2 / 3 / 2 / 3;
+    color: rgb(216, 213, 53);
+}
+
+#work-timer {
+    grid-area: 2 / 2 / 2 / 2;
+    color: rgb(18, 139, 24);
+}
+
+#break-timer {
+    grid-area: 2 / 4 / 2 / 4;
+    color: rgb(139, 26, 18);
+}
