@@ -7,8 +7,7 @@ import cv2
 from gaze_tracking import GazeTracking
 import pyautogui
 pyautogui.FAILSAFE
-import time
-# 0.7198632140726614 0.5236326614565042 0.7610776820079143 0.922214460886336
+
 gaze = GazeTracking()
 webcam = cv2.VideoCapture(0)
 left_bound = 0.7198632140726614
