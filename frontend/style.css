@@ -3,9 +3,22 @@ html{
     box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
 :root{
     --pomodoro: rgb(20,44,124);
     --shortBreak: rgb(230,228,232);
     --longBreak: rgb(49,115,248);
 }
+
+body {
+    background-color: var(--pomodoro);
+    transition: background-color 1s ease;
+    font-family: 'Calibri';
+    user-select: none;
+  }
 
