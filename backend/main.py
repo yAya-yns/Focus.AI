@@ -33,20 +33,14 @@ while True:
 
     cv2.putText(frame, text, (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.8, (44, 87,
                                                                       166), 2)
-    if distract_time > 20:
+    if distract_time > 5:
         distract_time = 0
         start = datetime.now()
         cpt = 0
         cv2.putText(frame, "please focus on your screen", (120, 120),
-                    cv2.FONT_HERSHEY_DUPLEX, 2.8, (230, 204, 29), 2)
-        while datetime.now() - start < timedelta(seconds=5*60*60):
-            cv2.imshow("Demo", frame)
-            cpt += 1
-            print(cpt)
-            while True:
-                k = cv2.waitKey(10)
-                if k == 27:
-                    break
+                    cv2.FONT_HERSHEY_DUPLEX, 1.8, (230, 204, 29), 2)
+        cv2.imshow("Demo", frame)
+        cv2.waitKey(600)
 
     left_pupil = gaze.pupil_left_coords()
     right_pupil = gaze.pupil_right_coords()
