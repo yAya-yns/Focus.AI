@@ -131,5 +131,17 @@ function handleMode(event) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    if ('Notification' in window) {
+        if (Notification.permission !== 'granted' && Notification.permission !== 'denied') {
+            Notification.requestPermission().then(function (permission) {
+                if (permission === 'granted') {
+                    new Notification(
+                        'Awesome! You will be notified at the start of each session'
+                    );
+                }
+            });
+        }
+    }
+
     switchMode('pomodoro');
 });
