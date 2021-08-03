@@ -1,12 +1,9 @@
-"""
-Demonstration of the GazeTracking library.
-Check the README.md for complete documentation.
-"""
-
+import tkinter as tk
 import cv2
 from gaze_tracking import GazeTracking
 import pyautogui
-pyautogui.FAILSAFE
+
+var = pyautogui.FAILSAFE
 
 gaze = GazeTracking()
 webcam = cv2.VideoCapture(0)
@@ -19,6 +16,13 @@ v_diff = upper_bound - lower_bound
 
 v_buffer = []
 h_buffer = []
+
+def make_window(words):
+    root = tk.Tk()
+    T = tk.Text(root, height=2, width=30)
+    T.pack()
+    T.insert(tk.END, words)
+    tk.mainloop()
 
 for i in range(20):
     _, frame = webcam.read()
@@ -51,6 +55,8 @@ while True:
     vr = gaze.vertical_ratio()
     if hr is None or vr is None:
         cv2.imshow("Demo", frame)
+        if cv2.waitKey(1) == 27:
+            break
         continue
     v_buffer.append(vr)
     h_buffer.append(hr)
@@ -59,6 +65,7 @@ while True:
     # print(v_arg, h_arg)
     box_center = [width * abs(h_arg - left_bound) / h_diff, height * abs(v_arg - lower_bound) / v_diff]
     pyautogui.moveTo(box_center[0], box_center[1])
+    if box_center[0] <
     print(box_center)
     # top_left_corner = (int(box_center[0]) - 40, int(box_center[1]) - 40)
     # lower_right_corner = (int(box_center[0]) + 40, int(box_center[1]) + 40)
