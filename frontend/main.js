@@ -132,3 +132,14 @@ mainButton.addEventListener('click', () => {
     }
 
 });
+function handleMode(event) {
+    const { mode } = event.target.dataset;
+
+    if (!mode) return;
+
+    switchMode(mode);
+
+    stopTimer();
+
+}
+
