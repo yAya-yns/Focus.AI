@@ -8,6 +8,7 @@ def index():
 
 @app.route('/my-link/')
 def my_link():
+  print ('The eye-tracking is started!')
   os.system("python3 main.py")
 
 if __name__ == '__main__':
