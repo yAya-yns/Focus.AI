@@ -8,13 +8,6 @@ const timer = {
 const modeButtons = document.querySelector('#js-mode-buttons');
 modeButtons.addEventListener('click', handleMode);
 
-function handleMode(event) {
-    const { mode } = event.target.dataset;
-
-    if (!mode) return;
-
-    switchMode(mode);
-}
 
 function switchMode(mode) {
     timer.mode = mode;
@@ -106,10 +99,6 @@ function startTimer() {
         }
     }, 1000);
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    switchMode('pomodoro');
-});
 
 
 function stopTimer() {
