@@ -31,11 +31,11 @@ top: 0;
 }
 
 progress::-webkit-progress-bar {
-background-color: rgba(0, 0, 0, 0.1);;
+background-color: rgba(235, 215, 215, 0.1);;
 }
 
 progress::-webkit-progress-value {
-background-color: #fff;
+background-color: rgba(255, 255, 255, 0.836);
 }
 
 .timer {
@@ -45,16 +45,17 @@ background-color: #fff;
     transform: translate(-50%, -50%);
     padding: 20px;
     text-align: center;
+    color: rgb(115, 158, 245);
   }
 
 .clock {
-margin-top: 50px;
-margin-bottom: 30px;
-font-size: 15rem;
-line-height: 1;
-display: flex;
-align-items: center;
-font-family: arial, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 15rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    font-family: arial, sans-serif;
 }
 
 .mode-button {
@@ -72,33 +73,43 @@ font-family: arial, sans-serif;
 }
 
 .mode-button.active {
-border-color: #fff;
+    border-color: #fff;
 }
 
 .main-button {
-cursor: pointer;
-box-shadow: rgb(235, 235, 235) 0px 6px 0px;
-font-size: 22px;
-height: 55px;
-text-transform: uppercase;
-color: hsl(175, 26%, 41%);
-font-weight: bold;
-width: 200px;
-background-color: white;
-border-width: initial;
-border-style: none;
-margin: 20px 0px 0px;
-padding: 0px 12px;
-border-radius: 4px;
-transition: color 0.5s ease-in-out 0s;
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 55px;
+    text-transform: uppercase;
+    color: hsl(175, 26%, 41%);
+    font-weight: bold;
+    width: 200px;
+    background-color: white;
+    border-width: initial;
+    border-style: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
 }
 
 button:focus, button:active {
-outline: none;
+    outline: none;
 }
 
 .main-button.active {
-transform: translateY(6px);
-box-shadow: none;
-outline: none;
+    transform: translateY(6px);
+    box-shadow: none;
+    outline: none;
 }
+
+.hidden {
+    display: none;
+  }
+  
+  @media screen and (max-width: 550px) {
+    .clock {
+      font-size: 8rem;
+    }
+  }
