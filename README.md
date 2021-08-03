@@ -6,5 +6,4 @@ This webcam-based eye tracking system based on the python library **NumPy**, **O
 `< pip install -r dependency.txt >`<br/>
 ## **The basic direction idea** <br/>
 We compute the number between 0.0 and 1.0 that indicates the horizontal/vertical direction of the gaze. The extreme right is 0.0, the center is 0.5 and the extreme left is 1.0. <br/>
-`ratio = gaze.horizontal_ratio()`<br/>
-`ratio = gaze.vertical_ratio()`<br/>
+`ratio = gaze.horizontal_ratio()` `ratio = gaze.vertical_ratio()` <br/>
