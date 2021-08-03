@@ -15,3 +15,21 @@ function handleMode(event) {
 
     switchMode(mode);
 }
+
+function switchMode(mode) {
+    timer.mode = mode;
+    timer.remainingTime = {
+        total: timer[mode] * 60,
+        minutes: timer[mode],
+        seconds: 0,
+    };
+
+    document
+        .querySelectorAll('button[data-mode]')
+        .forEach(e => e.classList.remove('active'));
+    document.querySelector(`[data-mode="${mode}"]`).classList.add('active');
+    document.body.style.backgroundColor = `var(--${mode})`;
+
+    updateClock();
+}
+
