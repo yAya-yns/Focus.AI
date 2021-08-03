@@ -38,13 +38,13 @@ while True:
         start = datetime.now()
         cpt = 0
         cv2.putText(frame, "please focus on your screen", (120, 120),
-                    cv2.FONT_HERSHEY_DUPLEX, 2.8, (230, 204, 29), 2)
-        while datetime.now() - start < timedelta(seconds=5*60*60):
+                    cv2.FONT_HERSHEY_DUPLEX, 1.8, (230, 204, 29), 2)
+        while datetime.now() - start < timedelta(seconds=2):
             cv2.imshow("Demo", frame)
             cpt += 1
             print(cpt)
             while True:
-                k = cv2.waitKey(10)
+                k = cv2.waitKey(1)
                 if k == 27:
                     break
 
