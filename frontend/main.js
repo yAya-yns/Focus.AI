@@ -85,6 +85,8 @@ function startTimer() {
             }
         }
 
+        document.querySelector(`[data-sound="${timer.mode}"]`).play();
+
         startTimer();
     }, 1000);
 }
@@ -120,29 +122,6 @@ mainButton.addEventListener('click', () => {
 });
 
 
-function startTimer() {
-    let { total } = timer.remainingTime;
-    const endTime = Date.parse(new Date()) + total * 1000;
-
-
-    mainButton.dataset.action = 'stop';
-
-    mainButton.textContent = 'stop';
-
-    mainButton.classList.add('active');
-
-
-    interval = setInterval(function () {
-        timer.remainingTime = getRemainingTime(endTime);
-        updateClock();
-
-        total = timer.remainingTime.total;
-        if (total <= 0) {
-            clearInterval(interval);
-        }
-    }, 1000);
-}
-
 
 function stopTimer() {
     clearInterval(interval);
@@ -154,3 +133,14 @@ function stopTimer() {
 
 
 
+const buttonSound = new Audio('button-sound.mp3');
+const mainButton = document.getElementById('js-btn');
+mainButton.addEventListener('click', () => {
+    buttonSound.play();
+    const { action } = mainButton.dataset;
+    if (action === 'start') {
+        startTimer();
+    } else {
+        stopTimer();
+    }
+});
