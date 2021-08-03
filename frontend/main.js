@@ -56,7 +56,6 @@ function updateClock() {
     const progress = document.getElementById('js-progress');
     progress.value = timer[timer.mode] * 60 - timer.remainingTime.total;
 }
-}
 
 let interval;
 
