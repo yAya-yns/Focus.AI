@@ -41,7 +41,7 @@ html{
 }
 
 #counter {
-    grid-area: 2 / 3 / 2 / 3;
+    grid-area: 2 / 4 / 2 / 4;
     color: rgb(216, 213, 53);
 }
 
@@ -51,6 +51,29 @@ html{
 }
 
 #break-timer {
-    grid-area: 2 / 4 / 2 / 4;
+    grid-area: 2 / 3 / 2 / 3;
     color: rgb(139, 26, 18);
+}
+
+.btn {
+    align-self: center;
+    justify-self: center;
+
+    width: 100px;
+    height: 30px;
+
+    font-size: 15px;
+    font-family: 'Pacifico', cursive;
+}
+
+#start {
+    grid-area: 3 / 2 / 3 / 2;
+}
+
+#reset {
+    grid-area: 3 / 3 / 3 / 3;
+}
+
+#stop {
+    grid-area: 3 / 4 / 3 / 4;
 }
