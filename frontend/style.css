@@ -46,3 +46,13 @@ background-color: #fff;
     padding: 20px;
     text-align: center;
   }
+
+.clock {
+margin-top: 50px;
+margin-bottom: 30px;
+font-size: 15rem;
+line-height: 1;
+display: flex;
+align-items: center;
+font-family: arial, sans-serif;
+}
