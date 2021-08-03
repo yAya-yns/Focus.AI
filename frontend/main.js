@@ -8,6 +8,16 @@ const timer = {
 const modeButtons = document.querySelector('#js-mode-buttons');
 modeButtons.addEventListener('click', handleMode);
 
+function handleMode(event) {
+    const { mode } = event.target.dataset;
+
+    if (!mode) return;
+
+    switchMode(mode);
+
+    stopTimer();
+
+}
 
 function switchMode(mode) {
     timer.mode = mode;
@@ -70,12 +80,20 @@ function getRemainingTime(endTime) {
 }
 
 const mainButton = document.getElementById('js-btn');
+
 mainButton.addEventListener('click', () => {
     const { action } = mainButton.dataset;
     if (action === 'start') {
         startTimer();
+
+    } else {
+
+        stopTimer();
+
     }
+
 });
+
 
 function startTimer() {
     let { total } = timer.remainingTime;
@@ -109,26 +127,5 @@ function stopTimer() {
     mainButton.classList.remove('active');
 }
 
-mainButton.addEventListener('click', () => {
-    const { action } = mainButton.dataset;
-    if (action === 'start') {
-        startTimer();
 
-    } else {
-
-        stopTimer();
-
-    }
-
-});
-function handleMode(event) {
-    const { mode } = event.target.dataset;
-
-    if (!mode) return;
-
-    switchMode(mode);
-
-    stopTimer();
-
-}
 
