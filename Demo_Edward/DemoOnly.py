@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import *
 import cv2
 from gaze_tracking import GazeTracking
 import pyautogui
@@ -17,8 +18,9 @@ v_diff = upper_bound - lower_bound
 v_buffer = []
 h_buffer = []
 
+root = tk.Tk()
+
 def make_window(words):
-    root = tk.Tk()
     T = tk.Text(root, height=2, width=30)
     T.pack()
     T.insert(tk.END, words)
@@ -65,8 +67,10 @@ while True:
     # print(v_arg, h_arg)
     box_center = [width * abs(h_arg - left_bound) / h_diff, height * abs(v_arg - lower_bound) / v_diff]
     pyautogui.moveTo(box_center[0], box_center[1])
-    if box_center[0] <
-    print(box_center)
+    if box_center[0] < 640 and box_center[1] < 360:
+        # root.destroy()
+        make_window("Youtube")
+    # print(box_center)
     # top_left_corner = (int(box_center[0]) - 40, int(box_center[1]) - 40)
     # lower_right_corner = (int(box_center[0]) + 40, int(box_center[1]) + 40)
 
