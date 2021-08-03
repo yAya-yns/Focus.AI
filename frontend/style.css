@@ -2,3 +2,13 @@ html{
     background-color: #67a6e2;
     font-family: 'Pacifico', cursive;
 }
+
+#container{
+    height: 300px;
+    width: 600px;
+    background-color: #0f275c;
+    border: 3px solid #F5E4C3;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
