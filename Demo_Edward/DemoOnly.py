@@ -11,8 +11,8 @@ import time
 # 0.7198632140726614 0.5236326614565042 0.7610776820079143 0.922214460886336
 gaze = GazeTracking()
 webcam = cv2.VideoCapture(0)
-left_bound = 7198632140726614
-right_bound = 5236326614565042
+left_bound = 0.7198632140726614
+right_bound = 0.5236326614565042
 lower_bound = 0.7610776820079143
 upper_bound = 0.922214460886336
 h_diff = left_bound - right_bound
@@ -58,7 +58,6 @@ while True:
     v_arg = sum(v_buffer)/len(v_buffer)
     h_arg = sum(h_buffer)/len(h_buffer)
     # print(v_arg, h_arg)
-    # box_center = [100, 100]
     box_center = [width * abs(h_arg - left_bound) / h_diff, height * abs(v_arg - lower_bound) / v_diff]
     pyautogui.moveTo(box_center[0], box_center[1])
     print(box_center)
