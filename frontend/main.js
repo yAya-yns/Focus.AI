@@ -54,6 +54,8 @@ function startTimer() {
     let { total } = timer.remainingTime;
     const endTime = Date.parse(new Date()) + total * 1000;
 
+    if (timer.mode === 'pomodoro') timer.sessions++;
+
     interval = setInterval(function () {
         timer.remainingTime = getRemainingTime(endTime);
         updateClock();
