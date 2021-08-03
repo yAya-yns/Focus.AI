@@ -119,3 +119,16 @@ function stopTimer() {
     mainButton.textContent = 'start';
     mainButton.classList.remove('active');
 }
+
+mainButton.addEventListener('click', () => {
+    const { action } = mainButton.dataset;
+    if (action === 'start') {
+        startTimer();
+
+    } else {
+
+        stopTimer();
+
+    }
+
+});
