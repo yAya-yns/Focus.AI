@@ -59,6 +59,18 @@ function updateClock() {
 
 let interval;
 
+const buttonSound = new Audio('button-sound.mp3');
+const mainButton = document.getElementById('js-btn');
+mainButton.addEventListener('click', () => {
+    buttonSound.play();
+    const { action } = mainButton.dataset;
+    if (action === 'start') {
+        startTimer();
+    } else {
+        stopTimer();
+    }
+});
+
 function startTimer() {
     let { total } = timer.remainingTime;
     const endTime = Date.parse(new Date()) + total * 1000;
@@ -132,15 +144,3 @@ function stopTimer() {
 }
 
 
-
-const buttonSound = new Audio('button-sound.mp3');
-const mainButton = document.getElementById('js-btn');
-mainButton.addEventListener('click', () => {
-    buttonSound.play();
-    const { action } = mainButton.dataset;
-    if (action === 'start') {
-        startTimer();
-    } else {
-        stopTimer();
-    }
-});
