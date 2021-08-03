@@ -11,8 +11,8 @@ html{
   
 :root{
     --pomodoro: rgb(20,44,124);
-    --shortBreak: rgb(230,228,232);
-    --longBreak: rgb(49,115,248);
+    --shortBreak: rgb(117, 154, 226);
+    --longBreak: rgb(60, 120, 240);
 }
 
 body{
@@ -23,19 +23,20 @@ body{
 }
 
 progress{
-border-radius: 3px;
-width: 100%;
-height: 12px;
-position: fixed;
-top: 0;
+    border-radius: 3px;
+    width: 100%;
+    height: 12px;
+    position: fixed;
+    top: 0;
+    color: rgba(230, 228, 232, 0.788);
 }
 
 progress::-webkit-progress-bar {
-background-color: rgba(235, 215, 215, 0.1);;
+    background-color: rgba(235, 215, 215, 0.1);;
 }
 
 progress::-webkit-progress-value {
-background-color: rgba(255, 255, 255, 0.836);
+    background-color: rgba(230, 228, 232, 0.788);
 }
 
 .timer {
@@ -45,7 +46,7 @@ background-color: rgba(255, 255, 255, 0.836);
     transform: translate(-50%, -50%);
     padding: 20px;
     text-align: center;
-    color: rgb(136, 164, 221);
+    color: rgba(230, 228, 232, 0.788);
   }
 
 .clock {
@@ -64,7 +65,7 @@ background-color: rgba(255, 255, 255, 0.836);
     cursor: pointer;
     box-shadow: none;
     font-weight: 300;
-    color: #fff;
+    color: rgba(230, 228, 232, 0.788);
     border: 1px solid transparent;
     margin: 0px;
     border-radius: 4px;
@@ -73,19 +74,19 @@ background-color: rgba(255, 255, 255, 0.836);
 }
 
 .mode-button.active {
-    border-color: #fff;
+    border-color: rgba(230, 228, 232, 0.788);
 }
 
 .main-button {
     cursor: pointer;
-    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    box-shadow: rgba(230, 228, 232, 0.61) 0px 6px 0px;
     font-size: 22px;
     height: 55px;
     text-transform: uppercase;
-    color: hsl(175, 26%, 41%);
+    color: rgb(136, 164, 221);
     font-weight: bold;
     width: 200px;
-    background-color: white;
+    background-color: rgba(230, 228, 232, 0.788);
     border-width: initial;
     border-style: none;
     margin: 20px 0px 0px;
@@ -108,8 +109,8 @@ button:focus, button:active {
     display: none;
   }
   
-  @media screen and (max-width: 550px) {
-    .clock {
-      font-size: 8rem;
-    }
-  }
+@media screen and (max-width: 550px) {
+.clock {
+    font-size: 8rem;
+}
+}
