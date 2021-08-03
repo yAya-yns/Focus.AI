@@ -15,10 +15,25 @@ html{
     --longBreak: rgb(49,115,248);
 }
 
-body {
+body{
     background-color: var(--pomodoro);
     transition: background-color 1s ease;
     font-family: 'Calibri';
     user-select: none;
-  }
+}
 
+progress{
+border-radius: 3px;
+width: 100%;
+height: 12px;
+position: fixed;
+top: 0;
+}
+
+progress::-webkit-progress-bar {
+background-color: rgba(0, 0, 0, 0.1);;
+}
+
+progress::-webkit-progress-value {
+background-color: #fff;
+}
