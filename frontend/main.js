@@ -3,6 +3,7 @@ const timer = {
     shortBreak: 5,
     longBreak: 15,
     longBreakInterval: 4,
+    sessions: 0,
 };
 
 const modeButtons = document.querySelector('#js-mode-buttons');
