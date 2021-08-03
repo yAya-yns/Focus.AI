@@ -49,6 +49,10 @@ function updateClock() {
     const sec = document.getElementById('js-seconds');
     min.textContent = minutes;
     sec.textContent = seconds;
+
+    const progress = document.getElementById('js-progress');
+    progress.value = timer[timer.mode] * 60 - timer.remainingTime.total;
+}
 }
 
 let interval;
