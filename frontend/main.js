@@ -111,3 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
     switchMode('pomodoro');
 });
 
+
+function stopTimer() {
+    clearInterval(interval);
+
+    mainButton.dataset.action = 'start';
+    mainButton.textContent = 'start';
+    mainButton.classList.remove('active');
+}
