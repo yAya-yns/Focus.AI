@@ -13,10 +13,15 @@ We compute the number between 0.0 and 1.0 that indicates the horizontal/vertical
 `(pupil_left + pupil_right) / 2` <br/>
 ## **5.Run the main function**<br/>
 `python3 main.py` <br/>
-## **Preview**<br/>
-# **Start with a timer**<br/>
-![](images/WechatIMG76.png) <br/>
-# **finish with a report**<br/>
-![](images/WechatIMG77.png) <br/>
+* ## **Preview**<br/>
+  * **Start with a Timer**<br/>
+  ![](backend/images/WechatIMG76.png) <br/>
+  * **Finish with a Report**<br/>
+  ![](backend/images/WechatIMG77.png) <br/>
 
+## Reference <br/>
+**Dataset** <br/>
+>  `shape_predictor_68_face_landmarks.dat` <br/>
+> The total number of individual identities in the dataset is *7485* <br/>
+> The resulting model obtains a mean error of *0.993833* with a standard deviation of *0.00272732* on the LFW benchmark
 
