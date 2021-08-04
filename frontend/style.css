@@ -111,7 +111,7 @@ button:focus, button:active {
     outline: none;
 }
 
-.stats-button {
+.report-button {
     cursor: pointer;
     box-shadow: rgba(230, 228, 232, 0.61) 0px 6px 0px;
     font-size: 24px;
