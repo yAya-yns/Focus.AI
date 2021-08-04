@@ -4,11 +4,21 @@ This is the main application
 import cv2
 from gaze_tracking import GazeTracking
 from datetime import datetime, timedelta
+from tabulate import tabulate
+
+import time
+
+timeout = 25*60   # [seconds]
+
+timeout_start = time.time()
 
 gaze = GazeTracking()
 webcam = cv2.VideoCapture(0)
 distract_time = 0
-while True:
+focus_time_period = 0
+distract_time_period = 0
+temp_time = timeout_start
+while time.time() < timeout_start + timeout:
     # We get a new frame from the webcam
     _, frame = webcam.read()
 
@@ -30,6 +40,8 @@ while True:
         text = "Looking bottom"
     else:
         distract_time += 1
+    if distract_time == 0 and temp_time - 60 == time.time():
+        focus_time_period += 1
 
     cv2.putText(frame, text, (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.8, (44, 87,
                                                                       166), 2)
@@ -56,3 +68,6 @@ while True:
 
 webcam.release()
 cv2.destroyAllWindows()
+
+distract_time_period = 25*60 - focus_time_period
+
