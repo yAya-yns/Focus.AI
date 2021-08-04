@@ -69,7 +69,12 @@ while True:
     pyautogui.moveTo(box_center[0], box_center[1])
     if box_center[0] < 640 and box_center[1] < 360:
         # root.destroy()
-        make_window("Youtube")
+        # make_window("Youtube")
+        cv2.putText(frame, "Camera", (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
+    elif box_center[0] < 640 and box_center[1] > 360:
+        cv2.putText(frame, "YouTube", (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
+    elif box_center[0] > 640:
+        cv2.putText(frame, "Word", (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
     # print(box_center)
     # top_left_corner = (int(box_center[0]) - 40, int(box_center[1]) - 40)
     # lower_right_corner = (int(box_center[0]) + 40, int(box_center[1]) + 40)
