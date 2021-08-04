@@ -13,4 +13,4 @@ We compute the number between 0.0 and 1.0 that indicates the horizontal/vertical
 `(pupil_left + pupil_right) / 2` <br/>
 ## **5.Run the main function**<br/>
 `python3 main.py` <br/>
-![alt text](http://url/to/img.png)
+
