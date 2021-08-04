@@ -111,6 +111,36 @@ button:focus, button:active {
     outline: none;
 }
 
+.stats-button {
+    cursor: pointer;
+    box-shadow: rgba(230, 228, 232, 0.61) 0px 6px 0px;
+    font-size: 24px;
+    width: 60px;
+    height: 55px;
+    text-transform: capitalize;
+    color: rgb(20,44,124);
+    font-weight: bold;
+    width: 200px;
+    background-color: rgba(230, 228, 232, 0.788);
+    border-width: initial;
+    border-style: none;
+    margin: 18px;
+    padding: 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+    text-align: center;
+    
+    top:9%;
+    left:75%;
+    position: absolute;
+}
+
+.stats-button.active {
+    transform: translateY(6px);
+    box-shadow: none;
+    outline: none;
+}
+
 .hidden {
     display: none;
   }
