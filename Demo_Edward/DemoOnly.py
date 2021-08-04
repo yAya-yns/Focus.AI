@@ -67,14 +67,16 @@ while True:
     # print(v_arg, h_arg)
     box_center = [width * abs(h_arg - left_bound) / h_diff, height * abs(v_arg - lower_bound) / v_diff]
     pyautogui.moveTo(box_center[0], box_center[1])
-    if box_center[0] < 640 and box_center[1] < 360:
+    if box_center[0] < 700 and box_center[1] < 500:
         # root.destroy()
         # make_window("Youtube")
         cv2.putText(frame, "Camera", (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
-    elif box_center[0] < 640 and box_center[1] > 360:
-        cv2.putText(frame, "YouTube", (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
-    elif box_center[0] > 640:
+    elif box_center[0] < 700 and box_center[1] > 500:
+        cv2.putText(frame, "YouTube", (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (0, 0, 255), 2)
+    elif box_center[0] > 700:
         cv2.putText(frame, "Word", (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
+    elif box_center[0] < 0 or box_center[0] > 720 or box_center[1] < 0 or box_center[1] > 1280:
+        cv2.putText(frame, "Outside", (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
     # print(box_center)
     # top_left_corner = (int(box_center[0]) - 40, int(box_center[1]) - 40)
     # lower_right_corner = (int(box_center[0]) + 40, int(box_center[1]) + 40)
