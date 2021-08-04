@@ -1,7 +1,8 @@
 from pynput import keyboard
+import os
 
 def on_activate():
-    print('Global hotkey activated!')
+    os.system("python3 /Users/lichunlin/Desktop/Focus.AI/Demo_Edward/DemoOnly.py")
 
 def for_canonical(f):
     return lambda k: f(l.canonical(k))
