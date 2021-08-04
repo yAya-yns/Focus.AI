@@ -39,6 +39,12 @@ progress::-webkit-progress-value {
     background-color: rgba(230, 228, 232, 0.788);
 }
 
+img {
+    border-radius: 30px;
+    padding: 15px;
+    width: 180px;
+}
+
 .timer {
     position: absolute;
     top: 50%;
