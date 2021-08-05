@@ -66,8 +66,8 @@ img {
 }
 
 .mode-button {
-    font-size: 16px;
-    height: 28px;
+    font-size: 18px;
+    height: 27px;
     cursor: pointer;
     box-shadow: none;
     font-weight: 300;
@@ -129,6 +129,7 @@ button:focus, button:active {
     border-radius: 4px;
     transition: color 0.5s ease-in-out 0s;
     text-align: center;
+    
     
     top:9%;
     left:75%;
