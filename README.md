@@ -11,7 +11,7 @@ Focus.AI is a web app...<br/>
 conda create focus
 conda activate focus
 python3 main.py
-``` <br/>
+``` 
 
 
 ## **Gaze Tracking Algorithm**<br/>
@@ -23,7 +23,7 @@ To get the basic direction, we compute the number between 0.0 and 1.0 that indic
 pupil_left = self.eye_left.pupil.x / (self.eye_left.center[0] * 2 - 10) <br/>
 pupil_right = self.eye_right.pupil.x / (self.eye_right.center[0] * 2 - 10) <br/>
 (pupil_left + pupil_right) / 2
-``` <br/>
+```
  * ![](backend/images/WechatIMG79.png) <br/>
  * ![](backend/images/WechatIMG80.png) <br/>
 
