@@ -3,6 +3,8 @@ html{
     box-sizing: border-box;
 }
 
+/* Pomodoro Page */
+
 *, *::before, *::after {
     box-sizing: inherit;
     margin: 0;
@@ -39,6 +41,12 @@ progress::-webkit-progress-value {
     background-color: rgba(230, 228, 232, 0.788);
 }
 
+.logo{
+    border-radius: 30px;
+    padding: 60px;
+    width: 24%;
+}
+
 .timer {
     position: absolute;
     top: 50%;
@@ -60,8 +68,8 @@ progress::-webkit-progress-value {
 }
 
 .mode-button {
-    font-size: 16px;
-    height: 28px;
+    font-size: 18px;
+    height: 27px;
     cursor: pointer;
     box-shadow: none;
     font-weight: 300;
@@ -105,6 +113,35 @@ button:focus, button:active {
     outline: none;
 }
 
+.report-button {
+    cursor: pointer;
+    box-shadow: rgba(230, 228, 232, 0.61) 0px 6px 0px;
+    font-size: 24px;
+    height: 55px;
+    text-transform: capitalize;
+    color: rgb(20,44,124);
+    font-weight: bold;
+    width: 200px;
+    background-color: rgba(230, 228, 232, 0.788);
+    border-width: initial;
+    border-style: none;
+    margin: 18px;
+    padding: 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+    text-align: center;
+    
+    top:9%;
+    left:75%;
+    position: absolute;
+}
+
+.stats-button.active {
+    transform: translateY(6px);
+    box-shadow: none;
+    outline: none;
+}
+
 .hidden {
     display: none;
   }
@@ -113,4 +150,103 @@ button:focus, button:active {
 .clock {
     font-size: 8rem;
 }
+}
+
+/* Report Page */
+h1{
+    display: block;
+    font-size: 45pt;
+    font-weight: bold;
+    font-family: 'Calibri', cursive;
+    color:white;
+    top:7.5%;
+    left:36%;
+    position: absolute;
+
+    text-transform: uppercase;
+
+}
+
+.icon{
+    border-radius: 30px;
+    padding: 36px;
+    width: 9%;
+
+    top: 3.9%;
+    left:66.6%;
+    position: absolute;
+    
+}
+
+h2{
+    display: block;
+    font-size: 33pt;
+    font-weight: bold;
+    font-family: 'Calibri';
+    color: rgba(230, 228, 232, 0.788);
+    text-transform: capitalize;
+    top:15%;
+    left:13.5%;
+    position: relative;
+
+}
+
+.record{
+    border-radius: 30px;
+    padding: 15px;
+    width: 90%;
+
+    left:3.9%;
+    position: relative;
+    
+}
+
+ul{
+    display: block;
+    font-size: 27pt;
+    font-weight: bold;
+    font-family: 'Calibri';
+    color: rgba(230, 228, 232, 0.788);
+
+    /* border-radius: 30px; */
+    padding: 9px;
+    top:30%; 
+    left:18%;
+    position: relative;
+    
+    list-style-type: square;
+}
+
+.left-col{
+    float: left;
+    width: 50;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.back-button{
+    cursor: pointer;
+    box-shadow: rgba(230, 228, 232, 0.61) 0px 6px 0px;
+    font-size: 24px;
+    height: 55px;
+    text-transform: capitalize;
+    color: rgb(20,44,124);
+    font-weight: bold;
+    width: 120px;
+    background-color: rgba(230, 228, 232, 0.788);
+    border-width: initial;
+    border-style: none;
+    margin: 18px;
+    padding: 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+    text-align: center;
+    
+    top:6%;
+    left:84%;
+    position: absolute;
 }

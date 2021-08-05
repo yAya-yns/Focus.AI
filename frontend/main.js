@@ -155,5 +155,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.onkeypress = function (e) {
     e = e || window.event;
-    alert("Pay Attention Please!!!");
+    alert("Pay Attention Please!!! Pomodoro Timer Paused :(");
 };
+
+function goBack() {
+    window.history.back();
+}

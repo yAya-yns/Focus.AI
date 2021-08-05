@@ -12,6 +12,10 @@
     <title>Pomodoro Timer</title>
 </head>
 
+<img src="logo.png" alt="Focus.AI" class='logo'>
+
+<progress id="js-progress" value="0"></progress>
+
 <body>
     <main class="app">
         <progress id="js-progress" value="0"></progress>
@@ -22,10 +26,10 @@
                     Pomodoro
                 </button>
                 <button data-mode="shortBreak" class="button mode-button" id="js-short-break">
-                    Short break
+                    Short Break
                 </button>
                 <button data-mode="longBreak" class="button mode-button" id="js-long-break">
-                    Long break
+                    Long Break
                 </button>
             </div>
             <div class="clock" id="js-clock">
@@ -46,9 +50,9 @@
 
     <script src='main.js'></script>
 
-</body>
+    <a href="report.html" class="report-button">View Report</a>
 
-<progress id="js-progress" value="0"></progress>
+</body>
 
 <audio src="backtowork.mp3" data-sound="pomodoro"></audio>
 <audio src="break.mp3" data-sound="shortBreak"></audio>
