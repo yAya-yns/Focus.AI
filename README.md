@@ -20,7 +20,7 @@ We compute the number between 0.0 and 1.0 that indicates the horizontal/vertical
   ![](backend/images/WechatIMG76.png) <br/>
   * **Finish with a Report**<br/>
   ![](backend/images/WechatIMG77.png) <br/>
-## The short video for showing the main idea <br/>
+## Product Video <br/>
   
 
 https://user-images.githubusercontent.com/55170389/128225057-88c2d486-2f36-4cfe-a428-031d33714c36.mp4
