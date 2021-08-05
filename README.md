@@ -6,8 +6,10 @@ Focus.AI is a web app...<br/>
 ## **Install Dependency**<br/>
 `< pip install -r dependency.txt >`<br/>
 
-## **Running Main Function**<br/>
-`python3 main.py` <br/>
+## **Run**<br/>
+```conda create situp_env
+conda activate situp_env
+python3 main.py``` <br/>
 
 
 ## **Gaze Tracking Algorithm**<br/>
@@ -15,9 +17,9 @@ The webcam-based eye tracking system is able to track the user's gaze as they mo
 To get the basic direction, we compute the number between 0.0 and 1.0 that indicates the horizontal/vertical direction of the gaze. The extreme right is 0.0, the center is 0.5 and the extreme left is 1.0. <br/>
 `gaze.horizontal_ratio()` `gaze.vertical_ratio()` <br/>
 
-`pupil_left = self.eye_left.pupil.x / (self.eye_left.center[0] * 2 - 10)` <br/>
-`pupil_right = self.eye_right.pupil.x / (self.eye_right.center[0] * 2 - 10)` <br/>
-`(pupil_left + pupil_right) / 2` <br/>
+`pupil_left = self.eye_left.pupil.x / (self.eye_left.center[0] * 2 - 10) <br/>
+pupil_right = self.eye_right.pupil.x / (self.eye_right.center[0] * 2 - 10) <br/>
+(pupil_left + pupil_right) / 2``` <br/>
  * ![](backend/images/WechatIMG79.png) <br/>
  * ![](backend/images/WechatIMG80.png) <br/>
 
