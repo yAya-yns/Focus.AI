@@ -47,6 +47,7 @@ for i in range(15):
 while True:
     # We get a new frame from the webcam
     _, frame = webcam.read()
+    frame = cv2.flip(frame, 1)
     height = frame.shape[0]
     width = frame.shape[1]
     # We send this frame to GazeTracking to analyze it

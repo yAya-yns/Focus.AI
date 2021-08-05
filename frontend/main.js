@@ -1,5 +1,5 @@
 const timer = {
-    pomodoro: 25,
+    pomodoro: 0.2,
     shortBreak: 5,
     longBreak: 15,
     longBreakInterval: 4,
