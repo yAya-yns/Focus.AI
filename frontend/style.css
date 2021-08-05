@@ -154,14 +154,39 @@ button:focus, button:active {
 }
 
 /* Report Page */
-h1 {
+h1{
     display: block;
     font-size: 45pt;
     font-weight: bold;
     font-family: 'Calibri';
     color: rgba(230, 228, 232, 0.788);
-    top:9%;
+    top:7.5%;
     left:39%;
     position: absolute;
 
-  }
+    text-transform: uppercase;
+
+}
+
+.icon{
+    border-radius: 30px;
+    padding: 60px;
+    width: 12%;
+
+    left:72%;
+    position: absolute;
+    
+}
+
+h2{
+    display: block;
+    font-size: 36pt;
+    font-weight: bold;
+    font-family: 'Calibri';
+    color: rgba(230, 228, 232, 0.788);
+    text-transform: capitalize;
+    top:15%;
+    left:4.2%;
+    position: relative;
+
+}
