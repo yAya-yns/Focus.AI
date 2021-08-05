@@ -28,8 +28,8 @@ pupil_right = self.eye_right.pupil.x / (self.eye_right.center[0] * 2 - 10)
 ![](backend/images/WechatIMG80.png) <br/>
 
 
-* ## **Preview**<br/>
-  * **Start with a Timer**<br/>
+## **Preview**<br/>
+  * **Start with Pomodoro timer**<br/>
   ![](backend/images/WechatIMG76.png) <br/>
   * **Finish with a Report**<br/>
   ![](backend/images/WechatIMG77.png) <br/>
