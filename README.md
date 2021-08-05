@@ -1,10 +1,10 @@
 # Focus.AI 
 
-## **Overall**<br/>
-Focus.AI is a web app...<br/>
+## **Description**<br/>
+Focus.AI is a web app designed to help users improve productivity. It tracks the user's focus through gaze, which informs the user when and how they are distracted during work. It also integrates with the pomodoro technique to help users achieve better focus. <br/>
 
 ## **Install Dependency**<br/>
-`< pip install -r dependency.txt >`<br/>
+`pip install -r dependency.txt`<br/>
 
 ## **Run**<br/>
 ```
@@ -20,8 +20,8 @@ To get the basic direction, we compute the number between 0.0 and 1.0 that indic
 `gaze.horizontal_ratio()` `gaze.vertical_ratio()` <br/>
 
 ```
-pupil_left = self.eye_left.pupil.x / (self.eye_left.center[0] * 2 - 10) <br/>
-pupil_right = self.eye_right.pupil.x / (self.eye_right.center[0] * 2 - 10) <br/>
+pupil_left = self.eye_left.pupil.x / (self.eye_left.center[0] * 2 - 10) 
+pupil_right = self.eye_right.pupil.x / (self.eye_right.center[0] * 2 - 10)
 (pupil_left + pupil_right) / 2
 ```
  * ![](backend/images/WechatIMG79.png) <br/>
