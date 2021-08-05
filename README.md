@@ -24,15 +24,15 @@ pupil_left = self.eye_left.pupil.x / (self.eye_left.center[0] * 2 - 10)
 pupil_right = self.eye_right.pupil.x / (self.eye_right.center[0] * 2 - 10)
 (pupil_left + pupil_right) / 2
 ```
-![](backend/images/WechatIMG79.png) <br/>
-![](backend/images/WechatIMG80.png) <br/>
+![](backend/images/gaze.png) <br/>
+![](backend/images/eye.png) <br/>
 
 
 ## **Preview**<br/>
   * **Start work with Pomodoro timer**<br/>
-  ![](backend/images/WechatIMG76.png) <br/>
+  ![](backend/images/pomodoro.png) <br/>
   * **Finish work to view report**<br/>
-  ![](backend/images/WechatIMG77.png) <br/>
+  ![](backend/images/report-display.png) <br/>
 
 ## Product Video <br/>
 https://user-images.githubusercontent.com/55170389/128225057-88c2d486-2f36-4cfe-a428-031d33714c36.mp4
