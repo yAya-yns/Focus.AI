@@ -186,7 +186,7 @@ h2{
     color: rgba(230, 228, 232, 0.788);
     text-transform: capitalize;
     top:15%;
-    left:9%;
+    left:11.1%;
     position: relative;
 
 }
@@ -204,13 +204,13 @@ h2{
 
 ul{
     display: block;
-    font-size: 24pt;
+    font-size: 27pt;
     font-weight: bold;
     font-family: 'Calibri';
     color: rgba(230, 228, 232, 0.788);
 
     /* border-radius: 30px; */
-    padding: 12px;
+    padding: 9px;
     /* top:30%; 
     left:3%; */
     list-style-type: square;
