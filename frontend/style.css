@@ -3,6 +3,8 @@ html{
     box-sizing: border-box;
 }
 
+/* Pomodoro Page */
+
 *, *::before, *::after {
     box-sizing: inherit;
     margin: 0;
@@ -150,3 +152,16 @@ button:focus, button:active {
     font-size: 8rem;
 }
 }
+
+/* Report Page */
+h1 {
+    display: block;
+    font-size: 45pt;
+    font-weight: bold;
+    font-family: 'Calibri';
+    color: rgba(230, 228, 232, 0.788);
+    top:9%;
+    left:39%;
+    position: absolute;
+
+  }
