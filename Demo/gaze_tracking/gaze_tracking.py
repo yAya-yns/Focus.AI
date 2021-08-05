@@ -122,7 +122,7 @@ class GazeTracking(object):
         frame = self.frame.copy()
 
         if self.pupils_located:
-            color = (0, 255, 0)
+            color = (255, 0, 0)
             x_left, y_left = self.pupil_left_coords()
             x_right, y_right = self.pupil_right_coords()
             cv2.line(frame, (x_left - 5, y_left), (x_left + 5, y_left), color)
