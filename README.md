@@ -24,8 +24,8 @@ pupil_left = self.eye_left.pupil.x / (self.eye_left.center[0] * 2 - 10)
 pupil_right = self.eye_right.pupil.x / (self.eye_right.center[0] * 2 - 10)
 (pupil_left + pupil_right) / 2
 ```
- * ![](backend/images/WechatIMG79.png) <br/>
- * ![](backend/images/WechatIMG80.png) <br/>
+![](backend/images/WechatIMG79.png) <br/>
+![](backend/images/WechatIMG80.png) <br/>
 
 
 * ## **Preview**<br/>
