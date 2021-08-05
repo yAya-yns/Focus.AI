@@ -215,7 +215,7 @@ ul{
     list-style-type: square;
 }
 
-.column {
+.left-col{
     float: left;
     width: 38.16%;
 }
