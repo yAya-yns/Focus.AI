@@ -193,12 +193,11 @@ h2{
 
 .record{
     border-radius: 30px;
-    padding: 60px;
+    padding: 15px;
     width: 92.4%;
 
-    top:72%; 
-    left:0.6%;
-    position: absolute;
+    left:3%;
+    position: relative;
     
 }
 
@@ -219,7 +218,7 @@ ul{
 .column {
     float: left;
     width: 38.16%;
-  }
+}
 
 .row:after {
     content: "";
