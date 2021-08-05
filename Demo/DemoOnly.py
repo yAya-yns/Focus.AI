@@ -26,7 +26,7 @@ def make_window(words):
     T.insert(tk.END, words)
     tk.mainloop()
 
-for i in range(20):
+for i in range(15):
     _, frame = webcam.read()
     height = frame.shape[0]
     width = frame.shape[1]
@@ -56,6 +56,7 @@ while True:
     hr = gaze.horizontal_ratio()
     vr = gaze.vertical_ratio()
     if hr is None or vr is None:
+        cv2.putText(frame, "Outside", (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
         cv2.imshow("Demo", frame)
         if cv2.waitKey(1) == 27:
             break
@@ -74,9 +75,7 @@ while True:
     elif box_center[0] < 700 and box_center[1] > 500:
         cv2.putText(frame, "YouTube", (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (0, 0, 255), 2)
     elif box_center[0] > 700:
-        cv2.putText(frame, "Word", (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
-    elif box_center[0] < 0 or box_center[0] > 720 or box_center[1] < 0 or box_center[1] > 1280:
-        cv2.putText(frame, "Outside", (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
+        cv2.putText(frame, "Paper", (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
     # print(box_center)
     # top_left_corner = (int(box_center[0]) - 40, int(box_center[1]) - 40)
     # lower_right_corner = (int(box_center[0]) + 40, int(box_center[1]) + 40)
