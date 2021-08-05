@@ -130,7 +130,6 @@ button:focus, button:active {
     transition: color 0.5s ease-in-out 0s;
     text-align: center;
     
-    
     top:9%;
     left:75%;
     position: absolute;
