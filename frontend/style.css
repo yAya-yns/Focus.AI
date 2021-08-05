@@ -186,7 +186,7 @@ h2{
     color: rgba(230, 228, 232, 0.788);
     text-transform: capitalize;
     top:15%;
-    left:4.2%;
+    left:9%;
     position: relative;
 
 }
@@ -196,17 +196,33 @@ h2{
     padding: 60px;
     width: 90%;
 
-    top:30%; 
+    top:60%; 
     left:3%;
     position: absolute;
     
 }
 
 ul{
-    border-radius: 30px;
-    padding: 60px;
-    width: 90%;
-    top:30%; 
-    left:3%;
+    display: block;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: 'Calibri';
+    color: rgba(230, 228, 232, 0.788);
+
+    /* border-radius: 30px; */
+    padding: 12px;
+    /* top:30%; 
+    left:3%; */
     list-style-type: square;
+}
+
+.column {
+    float: left;
+    width: 38.16%;
+  }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
