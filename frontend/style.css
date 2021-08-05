@@ -169,11 +169,12 @@ h1{
 
 .icon{
     border-radius: 30px;
-    padding: 60px;
-    width: 12%;
+    padding: 36px;
+    width: 9%;
 
-    left:39%;
-    position: relative;
+    top: 3.9%;
+    left:66.6%;
+    position: absolute;
     
 }
 
@@ -210,7 +211,9 @@ ul{
     /* border-radius: 30px; */
     padding: 9px;
     top:30%; 
-    left:60%;
+    left:0.9%;
+    position: relative;
+    
     list-style-type: square;
 }
 
@@ -244,6 +247,6 @@ ul{
     text-align: center;
     
     top:6%;
-    left:75%;
+    left:84%;
     position: absolute;
 }
