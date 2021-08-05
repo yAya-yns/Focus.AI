@@ -117,7 +117,6 @@ button:focus, button:active {
     cursor: pointer;
     box-shadow: rgba(230, 228, 232, 0.61) 0px 6px 0px;
     font-size: 24px;
-    width: 60px;
     height: 55px;
     text-transform: capitalize;
     color: rgb(20,44,124);
@@ -173,8 +172,8 @@ h1{
     padding: 60px;
     width: 12%;
 
-    left:81%;
-    position: absolute;
+    left:39%;
+    position: relative;
     
 }
 
@@ -224,4 +223,27 @@ ul{
     content: "";
     display: table;
     clear: both;
+}
+
+.back-button{
+    cursor: pointer;
+    box-shadow: rgba(230, 228, 232, 0.61) 0px 6px 0px;
+    font-size: 24px;
+    height: 55px;
+    text-transform: capitalize;
+    color: rgb(20,44,124);
+    font-weight: bold;
+    width: 120px;
+    background-color: rgba(230, 228, 232, 0.788);
+    border-width: initial;
+    border-style: none;
+    margin: 18px;
+    padding: 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+    text-align: center;
+    
+    top:6%;
+    left:75%;
+    position: absolute;
 }
