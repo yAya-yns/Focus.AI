@@ -6,6 +6,7 @@ Check the README.md for complete documentation.
 import cv2
 from gaze_tracking import GazeTracking
 import time
+import imutils
 
 gaze = GazeTracking()
 webcam = cv2.VideoCapture(0)
@@ -102,6 +103,7 @@ for i in range(10):
 while True:
     # We get a new frame from the webcam
     _, frame = webcam.read()
+    frame = imutils.resize(frame, width=400)
     height = frame.shape[0]
     width = frame.shape[1]
     # We send this frame to GazeTracking to analyze it
