@@ -32,7 +32,7 @@ pupil_right = self.eye_right.pupil.x / (self.eye_right.center[0] * 2 - 10)
   * **Start work with Pomodoro timer**<br/>
   ![](backend/images/pomodoro.png) <br/>
   * **Finish work to view report**<br/>
-  ![](backend/images/report-display.png) <br/>
+  ![](backend/images/report-display.jpg) <br/>
 
 ## Product Video <br/>
 https://user-images.githubusercontent.com/55170389/128225057-88c2d486-2f36-4cfe-a428-031d33714c36.mp4
